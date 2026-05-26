@@ -16,6 +16,7 @@ git status --short
 git add .
 $date = Get-Date -Format "yyyy-MM-dd"
 git commit -m "Add files $date"
+git pull origin main --rebase
 git push origin main
 Write-Host "kanryo!" -ForegroundColor Green
 Read-Host "Enter wo oshite kudasai"
